@@ -255,6 +255,98 @@ input[type=text]:placeholder {
   width: 100%;
 }
 
+/* SIGN UP */
+.background_signup{
+    background: rgba(65,65,65,0.7);
+    min-height: 100%;
+    padding-top: 50px;
+}
+.block_signup{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form_signup{
+    background-color: rgb(247,246,241);
+    margin: 40px auto 20px;
+    padding: 60px 30px 80px 30px;
+    text-align: center;
+    max-width: 625px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+    border-radius: 3px;     
+}
+.headingform_signup{
+    font-size: 28px;
+    text-shadow: none;
+    color: rgb(15, 109, 128);
+    line-height: 125%;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    font-weight: 400;
+}
+.blockform_signup{
+    max-width: 400px;
+    margin: 34px auto 0;
+}
+#signup-form {
+    margin-bottom: 36px;
+    font-size: 13px;
+}
+.blockform_signup input[type="text"]{
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgb(218,217,214);
+    border-radius: 0;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: left;
+}
+.blockform_signup input[type="password"]{
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgb(218,217,214);
+    border-radius: 0;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: left;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 340px;
+}
+#blockform_signup label.checkbox {
+    text-align: left;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.blue-button, input.blue-button {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #028193;
+    color: #fff;
+    text-decoration: none;
+    font-family: "AzoSans", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color .1s ease-in-out, border-color .1s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    height: 37px;
+    line-height: 38px;
+}
 
 
 /* OTHERS */
