@@ -17,7 +17,10 @@
 
 
  <div style="text-align: center; padding-top: 50px;">
+<<<<<<< HEAD
   <img src="<?php echo base_url('assets/img/logo.png') ?>">
+=======
+>>>>>>> 20065f18707060add7dce18807d7b2c17aa74dc1
 </div>
 
 <div class="wrapper fadeInDown">
@@ -40,7 +43,10 @@
       <input type="text" id="login" class="fadeIn second" name="username" placeholder="login">
       <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In">
+<<<<<<< HEAD
       <p>Don't have an account yet?</p> <a style="color: skyblue" href="<?= site_url('signupp') ?>"> Sign up here</a>
+=======
+>>>>>>> 20065f18707060add7dce18807d7b2c17aa74dc1
     </form>
 
     <!-- Remind Passowrd -->
