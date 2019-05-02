@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <title>Epidemic Sound</title>
 </head>
-<body style="background-image: url(assets/img/bg.jpg); background-size: cover;" >
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<body style="background-image: url(<?php echo base_url('assets/img/bg.jpg') ?>); background-size: cover;" >
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-reboot.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-reboot.min.css') ?>">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Include the above in your HEAD tag -->
 
 
-<div style="text-align: center; padding-top: 50px;">
-  <img src="assets/img/logo.png">
+ <div style="text-align: center; padding-top: 50px;">
+  <img src="<?php echo base_url('assets/img/logo.png') ?>">
 </div>
 
 <div class="wrapper fadeInDown">
@@ -26,11 +31,16 @@
     </div>
 
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+    <form action="<?= site_url('login') ?>" method="post">
+        <div style="text-align : center;">
+            <?php if(isset($_SESSION)) {
+                echo $this->session->flashdata('flash_data');
+            } ?>
+        </div>
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In">
-      <p>Don't have an account yet?</p> <a style="color: skyblue" href="#"> Sign up here</a>
+      <p>Don't have an account yet?</p> <a style="color: skyblue" href="<?= site_url('signupp') ?>"> Sign up here</a>
     </form>
 
     <!-- Remind Passowrd -->

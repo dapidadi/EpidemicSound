@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Epidemic Sound</title>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.min.css') ?>">
@@ -21,6 +21,12 @@
     .warnanavbar{
       background-color: #d3d3d3;
     }
+
+    .foto{
+      height: 300px;
+      width: 300px;
+    }
+
 
   </style>
 <!-- Navigation Bar -->
@@ -67,128 +73,91 @@
 
 <!-- END OF Navigation Bar -->
 
-<!-- Page Content carousel-->
-<div id="carousel1" class="carousel slide" data-ride="carousel" align="center" style="padding-top: 100px">
+<!-- CONTENT -->
 
-  <ul class="carousel-indicators">
-    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel1" data-slide-to="1"></li>
-    <li data-target="#carousel1" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?php echo base_url('assets/img/slide1.jpg') ?>" width="1100" height="350">
+<section>
+  <div class="container-fluid" style="padding-top: 100px">
+    <div class="row">
+      <div class="md-form active-cyan mb-3 col-sm-3">
+        <input class="form-control" type="text" placeholder="Search for playlists">
+      </div>
+      <div class="col-sm-3">
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide2.jpg') ?>" width="1100" height="350">
+    <div class="row">
+      <div class="md-form active-cyan mb-3 col-md-3">
+        <input class="form-control" type="text" placeholder="+ New project">
+      </div>
+      <div class="col-sm-3">
+        <a href="http://localhost/epidemic" style="color: #D7464B">Back</a>
+      </div>
+      <div class="col-sm-4"></div>
     </div>
-    <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide3.jpg') ?>" width="1100" height="350">
+    <div class="row" style="padding-bottom: 80px">
+       <div class="panel-group col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a class="text-dark" data-toggle="collapse" href="#collapse1">Private project</a>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">My Favourites</div>
+              <div class="panel-footer">
+                <div class="md-form active-cyan mb-3">
+                  <input class="form-control" type="text" placeholder="+ New playlist">
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      <div class="col-sm-3">
+        <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      </div>
+      <div class="col-sm-4">
+        <h2 class="new-page-header" style="color: #D7464B">TAPE MACHINES - SYMPHONY HEARTBEAT</h2>
+        <p>Categories: Electronica & Dance, Pop, Vocals</p>
+        <p>New Single From Tape Machines</p>
+        <p>This time it comes with hopeful vibes and powerful vocals by NeiNei. A true pop-ballad with all the ingredients that will put that extra feel to your project.</p>
+      </div>
     </div>
+    <div class="row" style="padding-bottom: 80px">
+      <div class="col-md-3"></div>
+      <div class="col-md-8">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Title</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Category</th>
+            <th scope="col">BPM</th>
+            <th scope="col">Energy</th>
+            <th scope="col">Action</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row"><span class="dot"></span></th>
+            <td style="color: #D7464B">Symphony Heartbeat</td>
+            <td>2010s Pop</td>
+            <td>Epic</td>
+            <td>78</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="dot"></span></th>
+            <td style="color: #D7464B">Symphony Heartbeat (Instrumental)</td>
+            <td>2010s Pop</td>
+            <td>Epic</td>
+            <td>78</td>
+            <td>Medium</td>
+          </tr>
+          </tbody>
+    </table>
   </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#carousel1" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
 </div>
+</section>  
 
-<br>
-
-
-<!-- Page Content list song-->
-<div class="container">
-  <h3>Staff Picks</h3>
-  <table class="table">
-  <thead>
-    <tr>
-      <th scope="col"> </th>
-      <th scope="col">Title</th>
-      <th scope="col">Genre</th>
-      <th scope="col">Category</th>
-      <th scope="col">BPM</th>
-      <th scope="col">Energy</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-  </tbody>
-  </table>
-
-</div>
-
-
-
-<!-- /.container -->
-
+<!-- END OF CONTENT -->
 
 <!-- FOOTER -->
 
@@ -198,7 +167,7 @@
     <div class="row">
     <div class="col">
     <ul style="list-style: none;">
-      <li><img src="<?php echo base_url('assets/img/logo.png') ?>"></li>
+      <li><img src="<?php echo base_url('assets/img/logored.png') ?>"></li>
     </ul>
     </div>
     <div class="col">
@@ -214,7 +183,7 @@
       <li>Newsletter</li>
       <li>Careers</li>
       <li>Press</li>
-      <li><a href="<?php echo site_url('welcome/contact') ?>">Contact </a></li>
+      <li>Contact</li>
     </ul>
     </div>
     <div class="col">
@@ -229,7 +198,6 @@
     </div>
   </div>
 </section>
-
 
 <section style="background-color: black">
   <br>

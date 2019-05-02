@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Epidemic Sound</title>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.min.css') ?>">
@@ -67,128 +67,95 @@
 
 <!-- END OF Navigation Bar -->
 
-<!-- Page Content carousel-->
-<div id="carousel1" class="carousel slide" data-ride="carousel" align="center" style="padding-top: 100px">
+<!-- CONTENT -->
 
-  <ul class="carousel-indicators">
-    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel1" data-slide-to="1"></li>
-    <li data-target="#carousel1" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?php echo base_url('assets/img/slide1.jpg') ?>" width="1100" height="350">
+<section>
+  <div class="container-fluid" style="padding-top: 100px">
+    <div class="row">
+      <div class="md-form active-cyan mb-3 col-md-3">
+        <input class="form-control" type="text" placeholder="Search for playlists">
+      </div>
+      <div class="col-md-8">
+        <h3 class="new-page-header" style="color: #D7464B">SFX</h3>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide2.jpg') ?>" width="1100" height="350">
+    <div class="row">  
+      <div class="md-form active-cyan mb-3 col-md-3">
+        <input class="form-control" type="text" placeholder="+ New project">
+      </div>
+      <div class="col-md-8">
+        <ul class="breadcrumb">
+           <li class="breadcrumb-item"><a href="#" class="text-dark">All</a></li>
+           <li class="breadcrumb-item"><a href="#" class="text-dark">Categories</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide3.jpg') ?>" width="1100" height="350">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel-group" style="padding-left: 10px">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a class="text-dark" data-toggle="collapse" href="#collapse1">Private project</a>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">My Favourites</div>
+              <div class="panel-footer">
+                <div class="md-form active-cyan mb-3">
+                  <input class="form-control" type="text" placeholder="+ New playlist">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Type</th>
+            <th scope="col">Tags</th>
+          </tr>
+          </thead>
+          <tbody>
+          <?php
+            foreach($SFX as $hasil){ 
+          ?>
+          <tr>
+            <td><?php echo $hasil->Title ?></td>
+            <td><?php echo $hasil->Type ?></td>
+            <td><?php echo $hasil->Tags ?></td>
+          </tr>
+          <?php } ?>
+          </tbody>
+<!--          <tbody>
+            <tr>
+            <th scope="row"><span class="dot"></span></th>
+            <td>1920s Chicago 1</td>
+            <td>Stings</td>
+            <td>glamorous,jazz,brass,vintage</td>
+            <td><a href="#" data-toggle="tooltip" title="Add to Playlist" style="color: #D7464B" ><h4>+</h4></a></td>
+            </tr>
+          </tbody> -->
+        </table>
+      </div>
     </div>
   </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#carousel1" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
 
-<br>
+  <div class="row-fluid">
+    <div class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+    </div>
+  </div>
+</section>  
 
-
-<!-- Page Content list song-->
-<div class="container">
-  <h3>Staff Picks</h3>
-  <table class="table">
-  <thead>
-    <tr>
-      <th scope="col"> </th>
-      <th scope="col">Title</th>
-      <th scope="col">Genre</th>
-      <th scope="col">Category</th>
-      <th scope="col">BPM</th>
-      <th scope="col">Energy</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-  </tbody>
-  </table>
-
-</div>
-
-
-
-<!-- /.container -->
-
+<!-- END OF CONTENT -->
 
 <!-- FOOTER -->
 
@@ -198,7 +165,7 @@
     <div class="row">
     <div class="col">
     <ul style="list-style: none;">
-      <li><img src="<?php echo base_url('assets/img/logo.png') ?>"></li>
+      <li><img src="<?php echo base_url('assets/img/logored.png') ?>"></li>
     </ul>
     </div>
     <div class="col">
@@ -214,7 +181,7 @@
       <li>Newsletter</li>
       <li>Careers</li>
       <li>Press</li>
-      <li><a href="<?php echo site_url('welcome/contact') ?>">Contact </a></li>
+      <li><a href="<?php echo base_url('welcome/contact'); ?>">Contact </a> </li>
     </ul>
     </div>
     <div class="col">
@@ -229,7 +196,6 @@
     </div>
   </div>
 </section>
-
 
 <section style="background-color: black">
   <br>

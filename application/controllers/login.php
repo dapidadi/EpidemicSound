@@ -1,23 +1,36 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-class login extends CI_Controller{
-    function __construct(){
+class Login extends CI_Controller
+{
+ 
+    function __construct() {
         parent::__construct();
-        $this->load->model('m_login');
+        $this->load->model("login_model", "login");
+        if(!empty($_SESSION['id_user']))
+            redirect('home');
     }
-
-    function index(){
-        $this->load->view('login');
+ 
+    public function index() {
+        if($_POST) {
+            $result = $this->login->validate_user($_POST);
+            if(!empty($result)) {
+                $data = [
+                    'id_user' => $result->id_user,
+                    'username' => $result->username
+                ];
+ 
+                $this->session->set_userdata($data);
+                redirect('home');
+            } else {
+                $this->session->set_flashdata('flash_data', 'Username or password is wrong!');
+                redirect();
+            }
+        }
+ 
+        $this->load->view("login");
     }
-
-    function action_login(){
-        $username = $this->input->post('username');
-        $password = $this->input->post('password');
-
-            
+    public function signup() {
+        $this->load->view('signupp');
     }
-
-    
 }
-
-?>

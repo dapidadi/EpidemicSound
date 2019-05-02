@@ -3,12 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-reboot.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-reboot.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-reboot.min.css') ?>">
 <style>
 
 #myVideo {
@@ -48,8 +48,8 @@
 		<div class="col"></div>
 		<div class="col"></div>
 	    <div class="col"></div>
-    	<div class="col" style="color: white"><a href="#" style="color: white">Log in</a></div>
-    	<div class="col" style="color: white"><a href="#" style="color: white">Sign up</a></div>
+    	<div class="col" style="color: white"><a href="<?php echo site_url('Welcome/login'); ?>" style="color: white">Log in</a></div>
+    	<div class="col" style="color: white"><a href="<?php echo site_url('Signupp'); ?>" style="color: white">Sign up</a></div>
   	</div>
 	<div class="row">
 		<br><br><br><br><br><br>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Epidemic Sound</title>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.min.css') ?>">
@@ -20,6 +20,22 @@
 
     .warnanavbar{
       background-color: #d3d3d3;
+    }
+
+    
+    .foto{
+        width: 250px;
+        height: 250px;
+        border: 3px solid transparent;
+        border-radius: 2px;
+        padding: 5px;
+    }
+    .foto:hover{
+        width: 250px;
+        height: 250px;
+        border: 3px solid #ddd;
+        border-radius: 2px;
+        padding: 5px;
     }
 
   </style>
@@ -67,127 +83,66 @@
 
 <!-- END OF Navigation Bar -->
 
-<!-- Page Content carousel-->
-<div id="carousel1" class="carousel slide" data-ride="carousel" align="center" style="padding-top: 100px">
+<!-- daftar album -->
 
-  <ul class="carousel-indicators">
-    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel1" data-slide-to="1"></li>
-    <li data-target="#carousel1" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?php echo base_url('assets/img/slide1.jpg') ?>" width="1100" height="350">
-    </div>
-    <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide2.jpg') ?>" width="1100" height="350">
-    </div>
-    <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide3.jpg') ?>" width="1100" height="350">
-    </div>
+<div class="container">
+  <h3 style="padding-top: 100px">Album</h3>
+  <div class="row">
+    <figure class="figure">
+      <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      <figcaption class="figure-caption text-center"><a style="color: #373737" href="<?php echo site_url('Welcome/detailalbum') ?>">TAPE MACHINES - SYMPHONY HEARTBEAT</a></figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      <figcaption class="figure-caption text-center"><a style="color: #373737" href="#">Judul Lagu</a></figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      <figcaption class="figure-caption text-center"><a style="color: #373737" href="#">Judul Lagu</a></figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      <figcaption class="figure-caption text-center"><a style="color: #373737" href="#">Judul Lagu</a></figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      <figcaption class="figure-caption text-center"><a style="color: #373737" href="#">Judul Lagu</a></figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      <figcaption class="figure-caption text-center"><a style="color: #373737" href="#">Judul Lagu</a></figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      <figcaption class="figure-caption text-center"><a style="color: #373737" href="#">Judul Lagu</a></figcaption>
+    </figure>
+    <figure class="figure">
+      <img class="foto" src="<?php echo base_url('assets/img/bg.jpg') ?>">
+      <figcaption class="figure-caption text-center"><a style="color: #373737" href="#">Judul Lagu</a></figcaption>
+    </figure>
+    
   </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#carousel1" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
 </div>
 
 <br>
-
-
-<!-- Page Content list song-->
-<div class="container">
-  <h3>Staff Picks</h3>
-  <table class="table">
-  <thead>
-    <tr>
-      <th scope="col"> </th>
-      <th scope="col">Title</th>
-      <th scope="col">Genre</th>
-      <th scope="col">Category</th>
-      <th scope="col">BPM</th>
-      <th scope="col">Energy</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-  </tbody>
-  </table>
-
+<div class="row-fluid">
+  <div class="pagination justify-content-center">
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item">
+    <a class="page-link" href="#" arial-label="next">
+      <span arial-hidden="true">&raquo;</span>
+      <span class="sr-only">Next</span>
+    </a>
+  </li>
+</div>
 </div>
 
+<!-- END OF daftar album -->
 
 
-<!-- /.container -->
+
 
 
 <!-- FOOTER -->
@@ -198,7 +153,7 @@
     <div class="row">
     <div class="col">
     <ul style="list-style: none;">
-      <li><img src="<?php echo base_url('assets/img/logo.png') ?>"></li>
+      <li><img src="assets/img/logo.png"></li>
     </ul>
     </div>
     <div class="col">
@@ -214,7 +169,7 @@
       <li>Newsletter</li>
       <li>Careers</li>
       <li>Press</li>
-      <li><a href="<?php echo site_url('welcome/contact') ?>">Contact </a></li>
+      <li>Contact</li>
     </ul>
     </div>
     <div class="col">

@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Epidemic Sound</title>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
+	<title> Epidemic</title>
+  <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-grid.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-reboot.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap-reboot.min.css') ?>">
+
+</head> 
 <body>
-  <style>
-    .dot{
-      height: 25px;
-  width: 25px;
-  background-color: red;
-  border-radius: 50%;
-  display: inline-block;
-    }
+<style>
 
-    .warnanavbar{
-      background-color: #d3d3d3;
-    }
+.warnanavbar
+{
+	background-color: #d3d3d3;
+}
+</style>
 
-  </style>
+
 <!-- Navigation Bar -->
 
 <nav class="navbar fixed-top navbar-light warnanavbar navbar-expand-lg">
@@ -67,127 +64,136 @@
 
 <!-- END OF Navigation Bar -->
 
-<!-- Page Content carousel-->
-<div id="carousel1" class="carousel slide" data-ride="carousel" align="center" style="padding-top: 100px">
 
-  <ul class="carousel-indicators">
-    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel1" data-slide-to="1"></li>
-    <li data-target="#carousel1" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?php echo base_url('assets/img/slide1.jpg') ?>" width="1100" height="350">
+<div class = "container" style="text-align:left;">
+
+<div class="row"style="padding-top: 150px;">
+    <div class="col-sm-9" >
+      <h1><b>CONTACT</b></h1>
+      <p>
+      	<b>Help & Support</b><br>
+      	<a href="mailto:hello@epidemicsound.com">hello@epidemic.com</a>
+      </p>
+      <p>
+      <b>Submit Your Music</b><br>
+      <a title="Read more" href="">Read more</a>	
+	  </p>
+	  <p>	
+	  </p>
+	  <h2>NORDICS HQ</h2>
+	  <p>
+	  	<b>Sales</b><br>
+	  	<a href="Frederik@epidemicsound.com">Frederik@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	Sweden<br>
+        +46 (0)76-319 45 47<br>
+        <a href="frederik@epidemicsound.com">frederik@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	Norway<br>
+        +46 (0)70-091 58 25‬<br>
+        <a href="hedda@epidemicsound.com">hedda@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	Denmark<br>
+        +45 31 40 60 46<br>
+        <a href="mia@epidemicsound.com">mia@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	Finland<br>
+        +46 (0)72- 521 66 65<br>
+        <a href="oona@epidemicsound.com">oona@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	<b>In-Store Music</b><br>
+	  	+46 (0)76 000 20 44<br>
+	  	<a href="ism@epidemicsound.com">ism@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	<b>Address</b><br>
+	  	Epidemic Sound <br>
+	  	Åsögatan 121<br>
+		116 24 Stockholm<br>
+		SWEDEN<br>	
+	  </p>
+	  <h2> NORTH AMERICA</h2>
+	  <p>
+	  	<b>New York, Sales</b><br>
+	  	<a href="us@epidemicsound.com">us@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	<b>Address</b><br>
+	  	Epidemic Sound INC.<br>
+		79 Walker Street,<br>
+		New York, NY 10013<br>
+		USA
+	  </p>
+	  <p>
+	  	<b>Los Angeles, Sales</b><br>
+	  	<a href="us@epidemicsound.com">us@epidemicsound.com</a>
+	  </p>
+
+	  <h2>GERMANY (GSA)</h2>
+	  <p>
+	  	<b>Sales & In-Store Music</b><br>
+	  	+49 (40)94 77 90 50<br>
+	  	<a href="germany@epidemicsound.com">germany@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	Address<br>
+	  	Epidemic Sound DE GMBH<br>
+		Alte Pianofortefabrik<br>
+		Schulterblatt 58<br>
+		20357 Hamburg<br>
+		GERMANY<br>
+	  </p>
+	  <h2>BENELUX</h2>
+	  <p>
+	  	<b>Sales & In-Store Music</b><br>
+	  	+31 (0)6 1511 2734<br>
+	  	<a href="benelux@epidemicsound.com">benelux@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	<b>Address</b><br>
+	  	Epidemic Sound<br>
+		Passeerdersgracht 19A<br>
+		1016XG Amsterdam<br>
+		Netherlands<br>
+	  </p>
+	  <h2>UK</h2>
+	  <p>
+	 	<b>Sales & In-Store Music</b><br>
+	 	<a href="uk@epidemicsound.com">uk@epidemicsound.com</a>	
+	  </p>
+	  <h2>SPAIN & PORTUGAL</h2>
+	  <p>
+	  	<b>Sales & In-Store Music</b><br>
+	  	+34 (0)610 572 661<br>
+	  	<a href="spain@epidemicsound.com">spain@epidemicsound.com</a>
+	  </p>
+	  <h2>FRANCE</h2>
+	  <p>
+	  	<b>Sales & In-Store Music</b><br>
+	  	+33 (0)6 81 90 97 91<br>
+	  	<a href="france@epidemicsound.com">france@epidemicsound.com</a>
+	  </p>
+	  <h2>REST OF THE WORLD</h2><br>
+	  Strategic Partnerships & B2B Audiovisual/InStore Music Licensing
+	  <p>
+	  <b>Audiovisual</b><br>
+	  +46 (0)73 531 91 75<br>
+	  <a href="row@epidemicsound.com">row@epidemicsound.com</a>
+	  </p>
+	  <p>
+	  	<b>In-Store Music</b><br>
+	  	+46 (0)70 277 12 90<br>
+	  	<a href="row@epidemicsound.com">row@epidemicsound.com</a>
+	  </p>
     </div>
-    <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide2.jpg') ?>" width="1100" height="350">
-    </div>
-    <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide3.jpg') ?>" width="1100" height="350">
-    </div>
+    
   </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#carousel1" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
 </div>
-
-<br>
-
-
-<!-- Page Content list song-->
-<div class="container">
-  <h3>Staff Picks</h3>
-  <table class="table">
-  <thead>
-    <tr>
-      <th scope="col"> </th>
-      <th scope="col">Title</th>
-      <th scope="col">Genre</th>
-      <th scope="col">Category</th>
-      <th scope="col">BPM</th>
-      <th scope="col">Energy</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-    <tr>
-      <th scope="row"><span class="dot"></span></th>
-      <td>Wait Till the Summer</td>
-      <td>2010s Pop</td>
-      <td>Hopeful</td>
-      <td>100</td>
-      <td>Medium</td>
-      <td><a href="#" data-toggle="tooltip" title="Add to Playlist">+</a></td>
-    </tr>
-  </tbody>
-  </table>
-
-</div>
-
-
-
-<!-- /.container -->
 
 
 <!-- FOOTER -->
@@ -261,5 +267,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
-</head>
 </html>
